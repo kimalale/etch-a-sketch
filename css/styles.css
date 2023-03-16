@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#head-tiltle {
+    margin-top: 56px;
+    text-align: center;
+}
+
+
+
+
+
+#main-view {
+    width: 1030px;
+}
