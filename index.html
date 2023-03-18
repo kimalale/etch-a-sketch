@@ -7,35 +7,92 @@
     <title>Etch - A - Sketch</title>
     <link href="/css/styles.css" rel="stylesheet">
     <script src="/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- The Title a little slogan -->
 <div id="head-tiltle">
     <h1>EETCH - A - SKETCH</h1>
     <p>Let your imagination roam free.</p>
 </div>
-<div id="main-view">
-    <div class="selection-bar">
-        <p>Grid Dimension</p>
-        <div id="grid-tool">
 
+
+<!-- Tool section and the Board View -->
+<div id="main-view">
+
+    <!-- The Tools View -->
+    <div class="selection-bar">
+
+        <!-- Grid Size Selectors -->
+        <p>Grid Dimension</p>
+        <div id="grid-size-view">
+
+            <input type="range" min="16" max="100" value="16" class="slider" id="rangeID">
+
+            <div class="grid-value"></div>
         </div>
+
+
+        <!-- Color Selectors -->
         <p>Color Picker</p>
         <div id="color-tool">
-
+            <div class="cl-view"></div>
+            <input type="text">
+            <button>Random</button>
         </div>
 
+
+        <!-- Tool Usage Buttons -->
         <div class="tools-selection">
+            <p>Tools</p>
             <button>Pencil Tool</button>
             <button>Eraser Tool</button>
             <button>Bucket Tool</button>
         </div>
+
+        <!-- The Reset Button -->
         <div id="reset">
             <button>RESET</button>
         </div>
 
     </div>
+
+
+    <!-- The Boadr View -->
     <div class="board-view">
 
+    </div>
+
+    <div class="parent">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
     </div>
 
 </div>
