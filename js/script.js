@@ -89,6 +89,31 @@ board.addEventListener('mousemove', (e) => {
         }
 })
 
+let isTouched = false;
+board.addEventListener("touchstart", () => {
+    isTouched = true;
+});
+
+board.addEventListener("touchend", () => {
+    isTouched = false;
+});
+
+board.addEventListener("touchcancel", () => {
+    isTouched = false;
+});
+
+board.addEventListener("touchmove", (e) => {
+    if (!isTouched) return;
+
+    if (e.target != board)
+    {
+    if (isTouched)
+        e.target.style = `background-color: ${(singleRandom) ? colorPick.value : random_hex_color_code()}`;
+    else
+        e.target.style = "#fcfcfc";
+    }
+});
+
 
 
 
