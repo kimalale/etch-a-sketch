@@ -92,7 +92,7 @@ board.addEventListener('mousemove', (e) => {
 let isTouched = false;
 board.addEventListener("touchstart", () => {
     isTouched = true;
-});
+}, false);
 
 board.addEventListener("touchend", () => {
     isTouched = false;
@@ -102,8 +102,10 @@ board.addEventListener("touchcancel", () => {
     isTouched = false;
 });
 
-board.addEventListener("touchmove", (e) => {
+board.addEventListener('touchmove', (e) => {
     if (!isTouched) return;
+    e.preventDefault();
+    console.log(e);
 
     if (e.target != board)
     {
@@ -112,7 +114,7 @@ board.addEventListener("touchmove", (e) => {
     else
         e.target.style = "#fcfcfc";
     }
-});
+}, false);
 
 
 
